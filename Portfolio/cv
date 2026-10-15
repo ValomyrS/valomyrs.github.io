@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>CV – David Lucas, BTS SIO</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+
+<header class="site-header">
+ <a class="site-title">Lucas DAVID - CV</a>
+ <p></p>
+ <a class="sub-title">BTS SIO - Première année</a>
+ <p></p>
+ <a class="sub-title">Lycée La Colinière, Nantes</a>
+ <p></p>
+ <ul class="info">
+    <li>Adresse: 38 Avenue des Lylas 44850 Saint Mars du désert</li>
+    <li>Tel: 07 66 10 44 97</li>
+    <li>Email: lucas.david44@hotmail.com</li>
+ </ul>
+</header>
+
+<section id="parcours" class="parcours">
+ <h2>Parcours Scolaire</h2>
+ <div class="collège">
+    <h4>2018 - 2022<br> Collège Agnès Varda</h4>
+    <p>Collège général Ligné</p>
+ </div>
+ <div class="lycée">
+    <h4>2022 - 2025<br> Lycée Honoré d'Estienne d'Orves</h4>
+    <p>Lycée général Carquefou<br> Science de l'ingénieur / Numérique et science informatique</p>
+ </div>
+ <div class="fac">
+    <h4>2025 - 2026<br> Nantes université</h4>
+    <p>Université de Nantes<br> Histoire de l'Art / Archéologie</p>
+ </div>
+ <div class="bts">
+    <h4>2026 - Aujourd'hui<br> Lycée La Colinière</h4>
+    <p>Lycée général Nantes<br> BTS Service informatique aux organisations</p>
+ </div>
+</section>
+
+<section id="expériences" class="expériences">
+ <h2>Expériences professionelles</h2>
+ <div class="pépinière">
+    <h4>Décembre 2021</h5>
+    <p>Pépinière du Val d'Erdre<br> Saint Mars du désert<br> Stage de 3ème rémunéré</p>
+ </div>
+ <div class="u">
+    <h4>Juin - Août 2026</h5>
+    <p>Employé saisonnier polyvalent en grande surface<br> Saint Mars du désert</p>
+ </div>
+
+<section id="compétences_sio" class="compétences_sio">
+ <div class="b1">
+   
+ </div>
+</section>
+
+<section id="compétences" class="compétences">
+ <h2>Compétences</h2>
+ <ul>
+    <li>Bonne Condition physique</li>
+    <li>Maîtrise de l’informatique et des langages de programmations python et html/css</a></li>
+    <li>Niveaux Anglais B2 - C1</li>
+ </ul>
+</section>
+<section id="intérets" class="intérets">
+ <h2>Intérets</h2>
+ <ul>
+    <li>Sport : - Badminton (Participation à des tournois à échelle départementale)<br> - Musculation</li>
+    <li>Jeux Vidéo</li>
+ </ul>
+</section>
+</body>
+</html>

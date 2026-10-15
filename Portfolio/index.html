@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio – David Lucas, BTS SIO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+
+<main>
+
+  <!-- ========== EN-TÊTE ========== -->
+  <header class="site-header">
+    <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
+      <img src="logo.png" alt="Logo"></a>
+    <a class="site-title" href="#accueil">Lucas DAVID - Portfolio</a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav">
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#veille">Veille</a></li>
+        <li><a href="#certification">Certification</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- ========== À PROPOS (schéma 2) ========== -->
+    <section id="accueil" class="about">
+      <h2 class="visually-hidden">À propos</h2>
+
+      <div class="about-hero">
+        <div class="about-text">
+          <h3>Présentation</h3>
+          <p>Bonjour, je suis Lucas David, étudiant en BTS SIO (Services Informatiques aux Organisations) au lycée La Colinière à Nantes, dans la spécialité ...
+          Toujours en cours d'étude, j'envisage de continuer mon cursus par une année de Bachelor en ... à l'issue de mon BTS.
+          En attendant, je vous propose ce portfolio qui est une vitrine de mes réalisations académiques, de mes compétences et de mon parcours et je suis ravi de vous inviter à explorer mon travail. Vous découvrirez mes projets, mon engagement dans l'informatique et mes compétences en développement.
+          Enfin, vous retrouverez ci-dessous mon CV.</p>
+        </div>
+        <div class="about-cv">
+          <figure class="media media--cv">
+            <img src="CV - Lucas - DAVID.png" alt="Aperçu de mon CV">
+          </figure>
+          <a class="button" href="CV - Lucas - DAVID.pdf" download>Télécharger mon CV</a>
+        </div>
+      </div>
+
+      <div class="bar">
+        <h3>Langages maîtrisés</h3>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>Python</li>
+        </ul>
+      </div>
+
+      <div class="bar">
+        <h3>Outils maîtrisés</h3>
+        <ul class="tags">
+          <li>VS Code</li><li>Linux</li><li>Windows</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ========== ACCUEIL (schéma 1) ========== -->
+    <section id="a-propos" class="home">
+      <div class="banner banner--parcours">
+        <h1>Parcours</h1>
+        <p>parcours scolaire et professionnel.</p>
+      </div>
+      <img src="parcours.png" alt="Schéma de mon parcours scolaire et professionnel">
+      <div class="banner banner--langue">
+        <h2>Langues</h2>
+        <p>Français : langue maternelle · Anglais : B2 - C1</p>
+      </div>
+
+    <!-- ========== PROJETS (schéma 3) ========== -->
+    <section id="projets" class="projects">
+      <h2>Mes projets</h2>
+
+      <div class="carousel">
+        <div class="carousel-viewport" id="carousel" tabindex="0" aria-label="Défilement des images de projets">
+          <article class="slide">
+            <!-- Remplacez par : <img src="images/projet1.jpg" alt="Projet 1"> -->
+            <div class="slide-img">Image projet 1</div>
+            <h3>Projet 1</h3>
+            <p>Contexte, objectifs et technologies utilisées.</p>
+          </article>
+          <article class="slide">
+            <div class="slide-img">Image projet 2</div>
+            <h3>Projet 2</h3>
+            <p>Contexte, objectifs et technologies utilisées.</p>
+          </article>
+          <article class="slide">
+            <div class="slide-img">Image projet 3</div>
+            <h3>Projet 3</h3>
+            <p>Contexte, objectifs et technologies utilisées.</p>
+          </article>
+        </div>
+
+        <div class="carousel-controls">
+          <button type="button" id="prev" aria-label="Projet précédent">▲</button>
+          <button type="button" id="next" aria-label="Projet suivant">▼</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTIONS DU MENU SANS SCHÉMA ========== -->
+    <section id="veille" class="simple">
+      <h2>Veille</h2>
+      <p>A venir...</p>
+    </section>
+
+    <section id="certification" class="simple">
+      <h2>Certification</h2>
+      <p>A venir...</p>
+    </section>
+
+    <section id="contact" class="simple">
+      <h2>Contact</h2>
+      <p>Pour me joindre : <a href="lucas.david44@hotmail.com">lucas.david44@hotmail.com</a></p>
+    </section>
+
+  </main>
+
+  <!-- ========== PIED DE PAGE ========== -->
+  <footer class="site-footer">
+    <p>DAVID Lucas – BTS SIO – Tous droits réservés</p>
+  </footer>
+
+  <script>
+    // Défilement vertical du carrousel de projets
+    const viewport = document.getElementById('carousel');
+    const step = () => viewport.clientHeight;
+    document.getElementById('prev').addEventListener('click', () =>
+      viewport.scrollBy({ top: -step(), behavior: 'smooth' }));
+    document.getElementById('next').addEventListener('click', () =>
+      viewport.scrollBy({ top: step(), behavior: 'smooth' }));
+  </script>
+</body>
+</html>
